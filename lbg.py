@@ -208,12 +208,12 @@ def delete_one(_id):
 # module import protection
 if __name__ == '__main__':
     # set up the app with listening socket for http requests and appropriate hostname
-parser = argparse.ArgumentParser()
-parser.add_argument("--PORT", default="8080")
-args = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--PORT", default="8080")
+    args = parser.parse_args()
 
-PORT = args.PORT
-HOST = 'localhost'
+    PORT = args.PORT
+    HOST = 'localhost'
 
     # get app to serve
     print(f'API Listening on http://{HOST}:{PORT}')
