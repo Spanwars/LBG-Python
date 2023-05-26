@@ -8,4 +8,4 @@ COPY . .
 RUN pip3 install -r requirements.txt
 
 # Create an entrypoint
-ENTRYPOINT ["python3" , "app.py"]
+ENTRYPOINT ["python3" , "lbg.py"]
