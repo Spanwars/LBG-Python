@@ -1,5 +1,5 @@
 
-From python:3.9
+FROM python:3.9
 
 # Copy contents into image
 COPY . .
