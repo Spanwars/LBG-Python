@@ -6,6 +6,8 @@ services:
     - target: 5000
       published: 5000
       protocol: tcp
+	networks:
+	-lbg-python-net
   nginx:
     image: nginx:latest
     ports:
@@ -16,3 +18,7 @@ services:
     - type: bind
       source: ./nginx.conf
       target: /etc/nginx/nginx.conf
+	networks:
+	-lbg-python-net
+networks:
+	lbg-python-net:
